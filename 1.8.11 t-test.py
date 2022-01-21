@@ -30,7 +30,7 @@ def analyze_returns(net_returns):
     # https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html#t-test-and-ks-test
 
     # assume population mean is zero
-    null_hypothesis = 0.0
+    null_hypothesis = 0
 
     # calculate t (and associated p-value) for the given data
     t, p = stats.ttest_1samp(net_returns, null_hypothesis)
