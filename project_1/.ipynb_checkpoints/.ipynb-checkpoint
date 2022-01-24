@@ -23048,7 +23048,7 @@
    "source": [
     "Note to reviewer:\n",
     "\n",
-    "I don't understand why the \"lookahead returns\" are used in the portfolio_returns() function. We get the signal from the \"previous returns\", and why not use them to predict against the regular unshifted \"returns\"? The unshifted returns are (future date - current date) so why do we predict relative to the \"lookahead returns\" as (future date (two periods) - future date (one period)). It seems like we are looking into the future twice when we really \n",
+    "I don't understand why the \"lookahead returns\" are used in the portfolio_returns() function. We get the signal from the \"previous returns\", and why not use them to predict against the regular unshifted \"returns\"? The unshifted returns are (future date - current date) so why do we predict relative to the \"lookahead returns\" as (future date (two periods) - future date (one period)). It seems like we are looking into the future twice when we really just want to look ahead once. \n",
     "\n",
     "What am I missing? Thank you!"
    ]
