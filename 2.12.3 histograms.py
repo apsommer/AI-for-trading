@@ -19,7 +19,7 @@ def plot_histogram(sample, title, bins=16, **kwargs):
     """
 
     # create histogram
-    plt.hist(sample, bins,  **kwargs)
+    plt.hist(sample, bins, **kwargs)
 
     # display plot
     plt.title(title)
